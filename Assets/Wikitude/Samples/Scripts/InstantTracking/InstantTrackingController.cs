@@ -7,8 +7,15 @@ public class InstantTrackingController : SampleController
 {
 	public GameObject ButtonDock;
 	public GameObject InitializationControls;
+	public GameObject Locator;
+	public GameObject Character;
+	public GameObject BackButton;
+	public GameObject CounterText;
+	public GameObject FoodButton;
+	public GameObject PlayButton;
 	public Text HeightLabel;
 	public Text ScaleLabel;
+	public GameObject IntroText;
 
 	public InstantTracker Tracker;
 	
@@ -50,6 +57,13 @@ public class InstantTrackingController : SampleController
 	#region UI Events
 	public void OnInitializeButtonClicked() {
 		Tracker.SetState(InstantTrackingState.Tracking);
+		Locator.SetActive(false);
+		Character.SetActive(true);
+		BackButton.SetActive(true);
+		CounterText.SetActive(true);
+		FoodButton.SetActive(true);
+		PlayButton.SetActive(true);
+		IntroText.SetActive(false);
 	}
 
 	public void OnHeightValueChanged(float newHeightValue) {
@@ -85,6 +99,13 @@ public class InstantTrackingController : SampleController
 			base.OnBackButtonClicked();
 		} else {
 			Tracker.SetState(InstantTrackingState.Initializing);
+			Locator.SetActive(true);
+			Character.SetActive(false);
+			BackButton.SetActive(false);
+			CounterText.SetActive(false);
+			FoodButton.SetActive(false);
+			PlayButton.SetActive(false);
+			IntroText.SetActive(true);
 		}
 	}
 	#endregion
@@ -126,7 +147,7 @@ public class InstantTrackingController : SampleController
 			_activeModels.Clear();
 
 			InitializationControls.SetActive(true);
-			ButtonDock.SetActive(false);
+			// ButtonDock.SetActive(false);
 		}
 		_gridRenderer.enabled = true;
 	}
