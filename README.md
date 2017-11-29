@@ -45,6 +45,8 @@ Based on the already functioning MVP.
 
 ## Code Snippet
 
+CatController.cs
+
 ```
 using UnityEngine;
 using UnityEngine.UI;
