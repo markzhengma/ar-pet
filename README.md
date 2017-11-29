@@ -12,10 +12,13 @@ Mark Zheng Ma
 
 ![screenshot](./Readme/loginUI.png)
 ![screenshot](./Readme/gameLaunch.png)
+![screenshot](./Readme/gameLaunch2.png)
 ![screenshot](./Readme/gamePlay1.png)
 ![screenshot](./Readme/gamePlay2.png)
 ![screenshot](./Readme/hintUI1.png)
 ![screenshot](./Readme/hintUI2.png)
+![screenshot](./Readme/foodUI.png)
+![screenshot](./Readme/playUI.png)
 
 More screenshots coming up...
 

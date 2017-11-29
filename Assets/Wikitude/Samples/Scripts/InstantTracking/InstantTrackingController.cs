@@ -57,13 +57,25 @@ public class InstantTrackingController : SampleController
 	#region UI Events
 	public void OnInitializeButtonClicked() {
 		Tracker.SetState(InstantTrackingState.Tracking);
-		Locator.SetActive(false);
-		Character.SetActive(true);
 		BackButton.SetActive(true);
 		CounterText.SetActive(true);
 		FoodButton.SetActive(true);
 		PlayButton.SetActive(true);
 		IntroText.SetActive(false);
+		// Character.SetActive(true);
+
+		Invoke("DeactivateLocator", 2);
+		Invoke("ActivateCharacter", 1);
+	}
+
+	private void DeactivateLocator ()
+	{
+		Locator.SetActive(false);
+	}
+
+	private void ActivateCharacter ()
+	{
+		Character.SetActive(true);
 	}
 
 	public void OnHeightValueChanged(float newHeightValue) {

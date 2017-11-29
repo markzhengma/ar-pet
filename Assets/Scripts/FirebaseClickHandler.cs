@@ -67,7 +67,18 @@
 			});
 		}
 
-		private void DecreaseCounter()  
+		public void MoreIncrementClickCounter()  
+		{
+			_counterRef.RunTransaction(data => {
+				data.Value = _count + 5;
+				return TransactionResult.Success(data);
+			}).ContinueWith(task => {
+				if (task.Exception != null) 
+					Debug.Log(task.Exception.ToString());
+			});
+		}
+
+		public void DecreaseCounter()  
 		{
 			_counterRef.RunTransaction(data => {
 				data.Value = _count - 1;
