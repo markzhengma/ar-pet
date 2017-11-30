@@ -34,7 +34,7 @@ Firebase
 Based on the already functioning MVP.
 
 ![screenshot](./Readme/loginUI.png)
-![screenshot](./Readme/gameLaunch.png)
+![screenshot](./Readme/gameLaunch1.png)
 ![screenshot](./Readme/gameLaunch2.png)
 ![screenshot](./Readme/gamePlay1.png)
 ![screenshot](./Readme/gamePlay2.png)
