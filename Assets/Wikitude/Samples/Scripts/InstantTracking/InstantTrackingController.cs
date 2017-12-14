@@ -13,6 +13,7 @@ public class InstantTrackingController : SampleController
 	public GameObject CounterText;
 	public GameObject FoodButton;
 	public GameObject PlayButton;
+	public GameObject LocatorPrefab;
 	public Text HeightLabel;
 	public Text ScaleLabel;
 	public GameObject IntroText;
@@ -62,6 +63,7 @@ public class InstantTrackingController : SampleController
 		FoodButton.SetActive(true);
 		PlayButton.SetActive(true);
 		IntroText.SetActive(false);
+		LocatorPrefab.SetActive(false);
 		// Character.SetActive(true);
 
 		Invoke("DeactivateLocator", 2);
@@ -111,13 +113,14 @@ public class InstantTrackingController : SampleController
 			base.OnBackButtonClicked();
 		} else {
 			Tracker.SetState(InstantTrackingState.Initializing);
-			Locator.SetActive(true);
+			// Locator.SetActive(true);
 			Character.SetActive(false);
 			BackButton.SetActive(false);
 			CounterText.SetActive(false);
 			FoodButton.SetActive(false);
 			PlayButton.SetActive(false);
 			IntroText.SetActive(true);
+			LocatorPrefab.SetActive(true);
 		}
 	}
 	#endregion
