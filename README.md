@@ -1,5 +1,7 @@
 # To Be With You
 
+![screenshot](./Readme/idle.png)
+
 ## Description
 
 An augmented reality pet game for mental health and education purposes.
@@ -31,7 +33,7 @@ Firebase
 
 ## Screenshots
 
-Based on the already functioning MVP.
+From the MVP.
 
 ![screenshot](./Readme/loginUI.png)
 ![screenshot](./Readme/gameLaunch1.png)
