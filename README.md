@@ -35,6 +35,7 @@ Firebase
 
 From the MVP.
 
+![screenshot](./Readme/process.png)
 ![screenshot](./Readme/loginUI.png)
 ![screenshot](./Readme/gameLaunch1.png)
 ![screenshot](./Readme/gameLaunch2.png)
