@@ -33,8 +33,6 @@ Firebase
 
 ## Screenshots
 
-From the MVP.
-
 ![screenshot](./Readme/process.png)
 ![screenshot](./Readme/loginUI.png)
 ![screenshot](./Readme/gameLaunch1.png)
@@ -48,7 +46,7 @@ From the MVP.
 
 ## Code Snippet
 
-CatController.cs
+CatMovement.cs
 
 ```
 using UnityEngine;
